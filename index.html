@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face-Api</title>
+    <script src="dist/face-api.js"></script>
+    <script src="script.js"></script>
+ 
+    <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: green;
+    }
+    #myImg{
+        width: 450px;
+        height: 450px;
+    }
+    .container{
+        margin-top: 5%;
+        position: relative;
+    }
+    canvas {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    </style>
+</head>
+<body>
+    <div id="tsparticles"></div>
+    <div class="container" >
+        <img src="" id="myImg" >
+    </div>
+
+    <input type="file" id="myFile" onchange="uploadImage()" accept=".jpg, .jpeg, .png">
+</body>
+</html>
